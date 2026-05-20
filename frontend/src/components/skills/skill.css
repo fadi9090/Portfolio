@@ -1,0 +1,148 @@
+.skills {
+  padding: 3rem 0;
+  color: beige;
+}
+
+.skills h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: beige;
+}
+
+.skills-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.skill-category {
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+  background: rgba(20, 20, 20, 0.95);
+  border-radius: 15px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(62, 212, 3, 0.2);
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  border-color: rgba(62, 212, 3, 0.5);
+  box-shadow: 0 5px 15px rgba(62, 212, 3, 0.1);
+}
+
+.skill-category h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #3ed403;
+  font-size: 1.3rem;
+  border-bottom: 2px solid rgba(62, 212, 3, 0.3);
+  display: inline-block;
+  width: auto;
+  padding-bottom: 0.5rem;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+  background: rgba(62, 212, 3, 0.1);
+  transform: translateX(5px);
+}
+
+.skill-icon {
+  font-size: 1.3rem;
+  min-width: 35px;
+}
+
+.skill-name {
+  min-width: 110px;
+  font-weight: 500;
+  color: beige;
+  font-size: 0.9rem;
+}
+
+/* Progress Bar Container */
+.skill-bar {
+  flex: 1;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Progress Bar Fill - Green Gradient */
+.skill-progress {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 1.5s ease-in-out;
+  position: relative;
+  background: linear-gradient(90deg, #3ed403, #7cfc00);
+  box-shadow: 0 0 8px rgba(62, 212, 3, 0.5);
+}
+
+/* Percentage Text */
+.skill-percentage {
+  font-size: 0.7rem;
+  color: #3ed403;
+  position: absolute;
+  right: -30px;
+  top: -4px;
+  font-weight: bold;
+}
+
+/* Alternative: Percentage inside bar for higher values */
+.skill-progress.percentage-high {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 5px;
+  color: white;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-categories {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .skill-category {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .skill-item {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .skill-bar {
+    width: 100%;
+    margin-top: 0.3rem;
+  }
+  
+  .skill-percentage {
+    position: static;
+    margin-left: auto;
+  }
+  
+  .skill-name {
+    min-width: 100px;
+  }
+}
+

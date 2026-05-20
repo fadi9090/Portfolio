@@ -1,0 +1,35 @@
+# Created by https://www.toptal.com/developers/gitignore/api/python,django,react
+
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media
+
+### React / Node ###
+node_modules/
+build/
+dist/
+.npm
+.next/
+*.lock
+
+### Virtual Environment ###
+venv/
+env/
+virtualenv/
+
+### Environment Variables (Secrets) ###
+.env
+.env.local
+.env.*.local
+
+### IDE / OS ###
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

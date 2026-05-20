@@ -1,0 +1,131 @@
+.footer {
+  background-color: rgb(14, 13, 13);
+  backdrop-filter: blur(10px);
+  color: beige;
+  padding: 2rem;
+  margin-top: 3rem;
+  border-radius: 10px;
+  bottom: 0;
+  box-shadow: 0 2px 4px rgba(62, 212, 3, 0.1);
+  transition: all 0.3s ease;
+}
+
+.footer:hover {
+  box-shadow: 0 4px 12px rgba(62, 212, 3, 0.2);
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: beige;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.footer-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-icons a {
+  color: beige;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  padding: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  transform: translateY(-3px);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+/* Different hover colors for each icon (optional) */
+.social-icons a:nth-child(1):hover {
+  background-color: rgba(62, 212, 3, 0.3);
+}
+
+.social-icons a:nth-child(2):hover {
+  background-color: rgba(0, 119, 181, 0.3);
+}
+
+.social-icons a:nth-child(3):hover {
+  background-color: rgba(255, 69, 96, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem;
+  }
+  
+  .footer-links {
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer p {
+    font-size: 0.8rem;
+  }
+  
+  .social-icons a {
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+  }
+}
+
+.back-to-top {
+  background: rgba(62, 212, 3, 0.2);
+  border: none;
+  color: beige;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.back-to-top:hover {
+  background: rgba(62, 212, 3, 0.4);
+  transform: translateY(-2px);
+}

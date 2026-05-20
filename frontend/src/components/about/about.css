@@ -1,0 +1,277 @@
+.about {
+  padding: 3rem 0;
+  color: beige;
+}
+
+/* Header Section */
+.about-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-header h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.about-header h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #3ed403, #667eea);
+  border-radius: 2px;
+}
+
+.about-tagline {
+  color: #3ed403;
+  font-size: 1rem;
+  margin-top: 1rem;
+  letter-spacing: 1px;
+}
+
+/* Main Grid Layout */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Left Column Styles */
+.about-left {
+  text-align: left;
+}
+
+.bio h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: beige;
+}
+
+.highlight {
+  background: linear-gradient(135deg, #3ed403, #667eea);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bio p {
+  line-height: 1.8;
+  color: #cbd5e0;
+  margin-bottom: 1rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.bio strong {
+  color: #3ed403;
+}
+
+/* Info Cards */
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.info-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(20, 20, 20, 0.8);
+  border-radius: 10px;
+  border: 1px solid rgba(62, 212, 3, 0.2);
+  transition: all 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(62, 212, 3, 0.5);
+  background: rgba(62, 212, 3, 0.05);
+}
+
+.info-icon {
+  font-size: 1.8rem;
+}
+
+.info-content h4 {
+  color: #3ed403;
+  font-size: 0.85rem;
+  margin-bottom: 0.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.info-content p {
+  color: beige;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Right Column Styles */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(20, 20, 20, 0.8);
+  border-radius: 12px;
+  border: 1px solid rgba(62, 212, 3, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(62, 212, 3, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.stat-card:hover::before {
+  left: 100%;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(62, 212, 3, 0.5);
+  box-shadow: 0 5px 15px rgba(62, 212, 3, 0.1);
+}
+
+.stat-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3ed403;
+  margin-bottom: 0.3rem;
+}
+
+.stat-label {
+  color: #cbd5e0;
+  font-size: 0.85rem;
+}
+
+/* Quote Box */
+.quote-box {
+  background: linear-gradient(135deg, rgba(62, 212, 3, 0.1), rgba(102, 126, 234, 0.1));
+  border-left: 3px solid #3ed403;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.quote-text {
+  font-style: italic;
+  line-height: 1.6;
+  color: beige;
+  margin-bottom: 0.5rem;
+}
+
+.quote-author {
+  color: #3ed403;
+  font-size: 0.9rem;
+  text-align: right;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .about-grid {
+    gap: 2rem;
+  }
+  
+  .bio h3 {
+    font-size: 1.5rem;
+  }
+  
+  .stat-number {
+    font-size: 1.5rem;
+  }
+  
+  .stat-icon {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 2rem 0;
+  }
+  
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .about-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .info-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .stats-grid {
+    gap: 0.8rem;
+  }
+  
+  .stat-card {
+    padding: 1rem;
+  }
+  
+  .stat-number {
+    font-size: 1.3rem;
+  }
+  
+  .quote-box {
+    padding: 1rem;
+  }
+  
+  .quote-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+  
+  .bio h3 {
+    font-size: 1.3rem;
+  }
+  
+  .info-card {
+    padding: 0.8rem;
+  }
+  
+  .info-icon {
+    font-size: 1.5rem;
+  }
+}
