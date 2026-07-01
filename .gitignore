@@ -1,35 +1,45 @@
-# Created by https://www.toptal.com/developers/gitignore/api/python,django,react
-
-### Django ###
-*.log
-*.pot
-*.pyc
-__pycache__/
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-media
-
-### React / Node ###
-node_modules/
-build/
-dist/
-.npm
-.next/
-*.lock
-
-### Virtual Environment ###
+# Python
 venv/
 env/
-virtualenv/
-
-### Environment Variables (Secrets) ###
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+db.sqlite3
+.DS_Store
+*.log
 .env
 .env.local
-.env.*.local
+local_settings.py
+media/
+staticfiles/
+static/
 
-### IDE / OS ###
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+build/
+dist/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE
 .vscode/
 .idea/
-.DS_Store
+*.swp
+*.swo
+*~
+*.sublime-workspace
+*.sublime-project
+
+# OS
 Thumbs.db
+.DS_Store
+
+# Render
+.render/
