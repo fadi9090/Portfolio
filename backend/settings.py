@@ -11,11 +11,14 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
 import os
+import sys
 import dj_database_url
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+sys.path.append(str(BASE_DIR))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "django-insecure-%pyy5!ccfcbk5(3ap7!$0jlojpl*zuf54@xam_-4rqa2&ro_t6"
@@ -43,7 +46,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "rest_framework",
     "corsheaders",
-    "portfolio",  # Your app
+    "portfolio",  
 ]
 
 MIDDLEWARE = [
