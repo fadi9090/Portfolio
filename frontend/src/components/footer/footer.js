@@ -14,13 +14,13 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <div className="social-icons">
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/fadi9090" target="_blank" rel="noopener noreferrer">
             🐙
           </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/fadi-m-k-aldawoud-654451189/" target="_blank" rel="noopener noreferrer">
             🔗
           </a>
-          <a href="mailto:fadi@example.com" target="_blank" rel="noopener noreferrer">
+          <a href="mailto:fadimohmmed0@gmail.com" target="_blank" rel="noopener noreferrer">
             ✉️
           </a>
         </div>
@@ -34,7 +34,7 @@ function Footer() {
           </button>
         </div>
         <p>&copy; {currentYear} <strong>Fadi Aldawoud</strong>. All rights reserved.</p>
-        <p>Built with React & Django by <strong>Fadi Aldawoud</strong></p>
+        <p>Salesforce & Golang Specialist | Enterprise Solutions Architect</p>
       </div>
     </footer>
   );

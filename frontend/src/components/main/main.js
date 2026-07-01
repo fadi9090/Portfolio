@@ -75,8 +75,8 @@ function Main() {
           <h1>
             Hi, I'm <span className="highlight">Fadi Aldawoud</span>
           </h1>
-          <h2>Full Stack & Salesforce Developer</h2>
-          <p>Building amazing web experiences with React, Django & Salesforce</p>
+          <h2>Salesforce & Golang Specialist</h2>
+          <p>Enterprise Solutions Architect | Full Stack Developer</p>
           <div className="hero-buttons">
             <button className="btn-primary" onClick={scrollToProjects}>
               View My Work
@@ -94,24 +94,25 @@ function Main() {
       <section className="explore">
         <div className="explore-content">
           <h2>Explore My Journey</h2>
-          <p>Discover what I do, the technologies I work with, and how I can help bring your ideas to life.</p>
+          <p>Specializing in Salesforce development and building high-performance Golang microservices, 
+          with a broad foundation across the full stack.</p>
           <div className="explore-cards">
             <div className="explore-card" onClick={scrollToProjects}>
               <div className="explore-icon">💼</div>
               <h3>My Projects</h3>
-              <p>View real-world applications I've built</p>
+              <p>View Salesforce implementations & Golang applications</p>
               <span className="explore-link">View Projects →</span>
             </div>
             <div className="explore-card" onClick={scrollToExplore}>
               <div className="explore-icon">👨‍💻</div>
               <h3>About Me</h3>
-              <p>Learn more about my background and skills</p>
+              <p>Learn about my Salesforce & Golang expertise</p>
               <span className="explore-link">Learn More →</span>
             </div>
             <div className="explore-card" onClick={scrollToContact}>
               <div className="explore-icon">📧</div>
               <h3>Get in Touch</h3>
-              <p>Let's work together on your next project</p>
+              <p>Let's build enterprise solutions together</p>
               <span className="explore-link">Contact Me →</span>
             </div>
           </div>

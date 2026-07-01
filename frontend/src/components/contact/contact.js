@@ -50,21 +50,21 @@ function Contact() {
           <div className="info-card">
             <div className="info-icon">📧</div>
             <h3>Email</h3>
-            <p>fadi.aldawoud@example.com</p>
-            <a href="mailto:fadi.aldawoud@example.com">Send me an email →</a>
+            <p>fadimohmmed0@gmail.com</p>
+            <a href="mailto:fadimohmmed0@gmail.com">Send me an email →</a>
           </div>
           
           <div className="info-card">
             <div className="info-icon">📱</div>
             <h3>Phone</h3>
-            <p>+123 456 7890</p>
-            <a href="tel:+1234567890">Call me →</a>
+            <p>+35796833947</p>
+            <a href="tel:+35796833947">Call me →</a>
           </div>
           
           <div className="info-card">
             <div className="info-icon">📍</div>
             <h3>Location</h3>
-            <p>Your City, Country</p>
+            <p>Larnaca, Cyprus</p>
             <span>Available for remote work</span>
           </div>
         </div>

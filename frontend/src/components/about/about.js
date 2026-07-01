@@ -2,39 +2,40 @@ import './about.css';
 
 function About() {
   const achievements = [
-    { value: "15+", label: "Projects Completed", icon: "🚀" },
-    { value: "8+", label: "Happy Clients", icon: "😊" },
-    { value: "5+", label: "Years Experience", icon: "💼" },
-    { value: "2000+", label: "Hours of Code", icon: "⚡" }
+    { value: "2+", label: "Years Experience", icon: "💼" },
+    { value: "15+", label: "Projects Delivered", icon: "🚀" },
+    { value: "10+", label: "Salesforce Solutions", icon: "☁️" },
+    { value: "6+", label: "Go Microservices", icon: "🐹" }
   ];
 
   const personalInfo = [
-    { icon: "🎓", label: "Education", value: "Computer Science, Cloud Computing" },
-    { icon: "💻", label: "Specialties", value: "React, Django, Salesforce" },
+    { icon: "☁️", label: "Salesforce", value: "Enterprise CRM & Custom Solutions" },
+    { icon: "🐹", label: "Golang", value: "Web Services & Microservices" },
     { icon: "🌍", label: "Location", value: "Available Worldwide" },
-    { icon: "🎯", label: "Focus", value: "Full Stack & Enterprise Solutions" }
+    { icon: "⚡", label: "Philosophy", value: "Clean Code · Scalable Systems" }
   ];
 
   return (
     <section className="about">
       <div className="about-header">
         <h2>About Me</h2>
-        <p className="about-tagline">Get to know the developer behind the code</p>
+        <p className="about-tagline">Salesforce Developer · Go Microservices Architect</p>
       </div>
       
       <div className="about-grid">
-        {/* Left Column - Bio & Personal Info */}
         <div className="about-left">
           <div className="bio">
             <p>
-              I'm a passionate <strong>Full Stack Developer</strong> and <strong>Salesforce Specialist</strong> 
-              with over 5 years of experience building web applications that make a difference. 
-              I love solving complex problems with elegant code and creating seamless user experiences.
+              I'm a <strong>Salesforce Developer</strong> with expertise in enterprise CRM 
+              solutions, custom applications, and business process automation.
+            </p>
+            <p>
+              I'm also a <strong>Go (Golang) Developer</strong> specializing in building 
+              high-performance web services and scalable microservices architectures.
             </p>
             <p className="mt-1">
-              My journey in tech started with a curiosity for how things work, and that curiosity 
-              has driven me to master multiple technologies and deliver high-quality solutions 
-              for clients worldwide.
+              With 2+ years of professional experience across both domains, I deliver 
+              clean, maintainable code and scalable solutions that drive business value.
             </p>
           </div>
           
@@ -51,7 +52,6 @@ function About() {
           </div>
         </div>
         
-        {/* Right Column - Stats & Achievements */}
         <div className="about-right">
           <div className="stats-grid">
             {achievements.map((stat, idx) => (
@@ -65,8 +65,8 @@ function About() {
           
           <div className="quote-box">
             <p className="quote-text">
-              "Code is not just about functionality — it's about creating experiences 
-              that users love and remember."
+              "Salesforce for enterprise solutions. Go for backend performance. 
+              Two specializations, one focus on quality."
             </p>
             <p className="quote-author">— Fadi Aldawoud</p>
           </div>
