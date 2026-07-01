@@ -20,6 +20,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 sys.path.append(str(BASE_DIR))
 
+# In wsgi.py and manage.py
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'settings')
+
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "django-insecure-%pyy5!ccfcbk5(3ap7!$0jlojpl*zuf54@xam_-4rqa2&ro_t6"
 

@@ -3,6 +3,7 @@
 import os
 import sys
 
+
 def main():
     """Run administrative tasks."""
     # Your settings.py is in the same directory as manage.py
@@ -20,3 +21,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+    
