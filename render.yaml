@@ -10,7 +10,7 @@ services:
       python manage.py collectstatic --noinput
     startCommand: |
       cd backend
-      gunicorn .wsgi:application
+      gunicorn wsgi:application
     envVars:
       - key: DJANGO_SECRET_KEY
         generateValue: true
